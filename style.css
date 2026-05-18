@@ -1,0 +1,169 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+  min-height:100vh;
+  padding:30px;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+}
+
+.topbar h1{
+  font-size:40px;
+}
+
+.topbar p{
+  color:#cbd5e1;
+}
+
+.topbar button{
+  padding:12px 18px;
+  border:none;
+  background:#2563eb;
+  color:white;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  margin-bottom:30px;
+}
+
+.stat-card{
+  background:#1e293b;
+  padding:30px;
+  border-radius:20px;
+}
+
+.stat-card h3{
+  color:#cbd5e1;
+  margin-bottom:10px;
+}
+
+.stat-card h2{
+  font-size:40px;
+}
+
+.add-student{
+  display:flex;
+  gap:15px;
+  margin-bottom:30px;
+}
+
+.add-student input{
+  flex:1;
+  padding:15px;
+  border:none;
+  border-radius:10px;
+  outline:none;
+}
+
+.add-student button{
+  padding:15px 25px;
+  border:none;
+  background:#2563eb;
+  color:white;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.student-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+}
+
+.student-card{
+  background:#1e293b;
+  padding:25px;
+  border-radius:20px;
+}
+
+.student-card h2{
+  margin-bottom:15px;
+}
+
+.status{
+  margin-bottom:15px;
+  font-weight:bold;
+}
+
+.present{
+  color:#22c55e;
+}
+
+.absent{
+  color:#ef4444;
+}
+
+.warning{
+  margin-top:10px;
+  color:#facc15;
+}
+
+.student-card button{
+  padding:10px 15px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  margin-right:10px;
+  margin-top:10px;
+}
+
+.present-btn{
+  background:#22c55e;
+  color:white;
+}
+
+.absent-btn{
+  background:#ef4444;
+  color:white;
+}
+
+.delete-btn{
+  background:#334155;
+  color:white;
+}
+
+.light-mode{
+  background:#f1f5f9;
+  color:black;
+}
+
+.light-mode .stat-card,
+.light-mode .student-card{
+  background:white;
+}
+
+@media(max-width:700px){
+
+  .topbar{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+  }
+
+  .add-student{
+    flex-direction:column;
+  }
+
+}
